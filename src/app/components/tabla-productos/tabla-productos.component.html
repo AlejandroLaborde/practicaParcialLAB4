@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">descripcion</th>
+        <th scope="col">tipo</th>
+        <th scope="col">fechaDeVencimiento</th>
+        <th scope="col">precio</th>
+        <th scope="col">imagen</th>
+        <th scope="col">Opciones</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let producto of productos">
+      <tr>
+        <td>{{producto.id}}</td>
+        <td>{{producto.descripcion}}</td>
+        <td>{{producto.tipo}}</td>
+        <td>{{producto.fechaDeVencimiento}}</td>
+        <td>{{producto.precio}}</td>
+        <td><img [src]=producto.rutaDeFoto alt="" width="50px"></td>
+        <td><app-boton-borrar [elementoAEliminar]=producto></app-boton-borrar></td>
+      </tr>
+    </tbody>
+  </table>
