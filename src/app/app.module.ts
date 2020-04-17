@@ -10,6 +10,8 @@ import { ErrorComponent } from './components/error/error.component';
 import { HomeComponent } from './components/home/home.component';
 import { TablaProductosComponent } from './components/tabla-productos/tabla-productos.component';
 import { BotonBorrarComponent } from './components/boton-borrar/boton-borrar.component';
+import { BusquedaProductoComponent } from './components/busqueda-producto/busqueda-producto.component';
+import { MuestraProductoComponent } from './components/muestra-producto/muestra-producto.component';
  
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BotonBorrarComponent } from './components/boton-borrar/boton-borrar.com
     ErrorComponent,
     HomeComponent,
     TablaProductosComponent,
-    BotonBorrarComponent
+    BotonBorrarComponent,
+    BusquedaProductoComponent,
+    MuestraProductoComponent
   ],
   imports: [
     BrowserModule,

@@ -7,16 +7,18 @@ import { Producto } from '../clases/producto';
 export class ProductosService {
 
   productos = [
-    new Producto(1,'descrp1','tipo1','26/04/1995',123,'assets/images/1.jpg'),
-    new Producto(2,'descrp2','tipo2','26/04/1995',123,'assets/images/1.jpg'),
-    new Producto(3,'descrp2','tipo2','26/04/1995',123,'assets/images/1.jpg'),
+    new Producto(1,'dulce de leche','lacteos','26/04/1995',123,'assets/images/1.jpg'),
+    new Producto(2,'milanesa','carnes','26/04/1995',123,'assets/images/milanesa.jpg'),
+    new Producto(3,'mermelada','dulces','26/04/1995',123,'assets/images/mermelada.jpg'),
    ]
 
   constructor() { 
     
   }
 
-  
+  obtenerProducto(id){
+    return this.productos[this.obtenerIndice(id)];
+  }
 
   obtenerProductos(): Producto[]{
     return this.productos;

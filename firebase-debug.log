@@ -1,0 +1,17 @@
+[debug] [2020-04-17T00:26:52.174Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T00:26:52.176Z] Command:       E:\node\node.exe C:\Users\Alejandro\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-04-17T00:26:52.177Z] CLI Version:   8.0.2
+[debug] [2020-04-17T00:26:52.177Z] Platform:      win32
+[debug] [2020-04-17T00:26:52.177Z] Node Version:  v10.16.3
+[debug] [2020-04-17T00:26:52.178Z] Time:          Thu Apr 16 2020 21:26:52 GMT-0300 (GMT-03:00)
+[debug] [2020-04-17T00:26:52.178Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T00:26:52.178Z] 
+[debug] [2020-04-17T00:26:52.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-17T00:26:52.190Z] > authorizing via signed-in user
+[debug] [2020-04-17T00:26:52.191Z] [iam] checking project practicaparciallabo4 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-04-17T00:26:52.194Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-17T00:26:52.195Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-17T00:26:52.505Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 00:27:00 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-17T00:26:52.513Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/practicaparciallabo4:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}

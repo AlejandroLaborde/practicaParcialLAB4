@@ -1,9 +1,13 @@
 
 
 
+<div class="container">
 
+    <div style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 50px;">
 
+        <app-tabla-productos [productos]=this.productos ></app-tabla-productos>
 
-
-
-<app-tabla-productos [productos]=this.productos ></app-tabla-productos>
+        <app-busqueda-producto (productoEncontrado)="encontro($event)" ></app-busqueda-producto>
+    </div>
+    <app-muestra-producto [productoAMostrar]=this.productoAMostrar></app-muestra-producto>
+</div>

@@ -10,7 +10,7 @@ import { ProductosService } from 'src/app/services/productos.service';
 export class HomeComponent implements OnInit {
 
   productos: Producto[];
-
+  productoAMostrar: Producto;
   constructor( private productosService: ProductosService) { 
     this.productos = this.productosService.obtenerProductos();
   }
@@ -19,6 +19,8 @@ export class HomeComponent implements OnInit {
 
   }
 
-
+  encontro(e){
+    this.productoAMostrar = e;
+  }
 
 }

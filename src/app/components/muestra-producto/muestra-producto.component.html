@@ -1,0 +1,25 @@
+
+
+
+
+
+<div class="card" style="width: 18rem;">
+  
+  <h5 class="card-title">Producto</h5>
+    <div *ngIf="this.productoAMostrar ;else elseBlock">
+      <div class="card-body" >
+        <h6 class="card-title">ID: {{productoAMostrar.id}}</h6>
+        <h6 class="card-title">Tipo: {{productoAMostrar.tipo}}</h6>
+        <p class="card-text">Descripcion: {{productoAMostrar.descripcion}}</p> 
+      </div>
+
+      <img [src]=productoAMostrar.rutaDeFoto class="card-img-top" alt="...">
+    </div>
+    <ng-template #elseBlock>
+        <div class="alert alert-danger" role="alert">
+          No hay productos seleccionados
+        </div>
+    </ng-template>
+    
+    
+</div>
